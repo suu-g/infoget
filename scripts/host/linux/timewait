@@ -1,0 +1,3 @@
+#!/bin/sh
+
+awk '/TCP:/ {print $7}' /proc/net/sockstat

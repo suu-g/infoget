@@ -1,0 +1,6 @@
+#!/bin/sh
+
+. `dirname $0`/pid
+
+awk '/^Threads:/ {print $2}' /proc/${1}/status
+

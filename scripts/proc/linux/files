@@ -1,0 +1,5 @@
+#!/bin/sh
+
+. `dirname $0`/pid
+
+ls -l  /proc/${1}/fd/ | awk  '/-> \//' | wc -l
